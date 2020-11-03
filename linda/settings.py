@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'boda.apps.BodaConfig',
     'rest_framework',
+    'knox'
 ]
 
 MIDDLEWARE = [
