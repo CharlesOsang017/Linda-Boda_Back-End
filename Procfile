@@ -1,0 +1,1 @@
+web: gunicorn linda.wsgi --log-file -
