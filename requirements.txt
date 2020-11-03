@@ -1,2 +1,10 @@
+cffi==1.14.3
+confusable-homoglyphs==3.2.0
+cryptography==3.2.1
 Django==1.11.17
+django-registration==2.4.1
+django-rest-knox==4.1.0
+djangorestframework==3.12.1
+pycparser==2.20
 pytz==2020.4
+six==1.15.0
