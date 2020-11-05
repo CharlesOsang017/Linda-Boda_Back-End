@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from .models import Passenger
 
-# User Serializer
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -18,3 +18,10 @@ class RegisterSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(validated_data['username'], validated_data['email'], validated_data['password'])
 
         return user
+
+
+
+class PassengerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Passenger
+        fields = ('name', 'destination', 'county', 'phone_number', 'country')
