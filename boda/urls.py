@@ -6,5 +6,5 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    url('api/register/', RegisterAPI.as_view(), name='register'),
+    url(r'^api/register/$', RegisterAPI.as_view(), name='register'),
 ]
