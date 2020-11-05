@@ -1,6 +1,7 @@
 from knox import views as knox_views
 from .views import LoginAPI
-from django.urls import path
+from django.conf.urls import url, include
+
 
 urlpatterns = [
     url(r'^api/login/$', LoginAPI.as_view(), name='login'),
